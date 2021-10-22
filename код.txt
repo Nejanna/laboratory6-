@@ -1,0 +1,29 @@
+ #include <iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+	int min, max;
+	float x, h, y;
+	cout << "enter min,max and h" << endl;
+	cin >> min >> max >> h;
+	x = min;
+	cout << "\tx" << "\tY(x)" << endl;
+	while (x <= max + h/2)
+	{
+		y = sin(x) * sin(x) * sin(x) + 3 * pow(x, 2) + 3;
+		cout << setw(10) << x << setw(10) << setprecision(3) << y << endl;
+		x += h;
+	}
+	cout << "Do....while" << endl;
+	x = min;
+	cout << "\tx" << "\tY(x)" << endl;
+	do
+	{
+		y = sin(x) * sin(x) * sin(x) + 3 * pow(x, 2) + 3;
+		cout << setw(10) << x << setw(10) << setprecision(3) << y << endl;
+		x += h;
+	} while (x <= max + h/2);
+	system("pause");
+	return 0;
+}
