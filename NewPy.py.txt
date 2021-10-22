@@ -1,0 +1,13 @@
+#include <iostream>
+#include <windows.h>
+using namespace std;
+int main() {
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+	float N, x;
+	cout << "Секунд:" << endl;
+	cin >> N;
+	x = static_cast <int>(N ) / 60;
+	cout << "Хвилин:" << x;
+	return 0;
+}
