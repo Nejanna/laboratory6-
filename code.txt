@@ -1,4 +1,4 @@
- #include <iostream>
+ #include <iostream>// коментар 4 листопада
 #include<iomanip>
 using namespace std;
 int main()
