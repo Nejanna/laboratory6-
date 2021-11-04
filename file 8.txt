@@ -1,0 +1,20 @@
+Код для завдання із знаходження добутку 
+// лабораторна
+#include <iostream>
+#include <Windows.h>
+#include<cmath>
+using namespace std;
+int main()
+{
+	double y, z;
+	cin >> y;
+z = 1;
+	for (int k= 1; k < 6;k++) 
+	{
+		z *= log(k*y);
+		z = (pow(y, 5) + cbrt(y) - 2 )/ z;
+	}
+	cout  << z << endl;
+	system("pause");
+	return 0;
+}
