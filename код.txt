@@ -1,7 +1,7 @@
  #include <iostream>
 #include<iomanip>
 using namespace std;
-int main()
+int main() //коментар для лабораторної 9 
 {
 	int min, max;
 	float x, h, y;
